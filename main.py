@@ -56,42 +56,4 @@ for n in numbers:
     # send the message
     input_box.send_keys(Keys.ENTER)
     time.sleep(3)
-    
-
-'''    
-    # click in input text place in chat            
-    input_xpath = '//div[@contenteditable="true"][@data-tab="6"]'
-    input_box = browser.find_element_by_xpath(input_xpath)
-    time.sleep(1)
-
-    # write the message
-    pyperclip.copy(msg)
-
-    # send the message  
-    input_box.send_keys(Keys.SHIFT, Keys.INSERT)  # Keys.CONTROL + "v"'   
-
-    # click in menu
-    menu_xpath = '//*[@id="main"]/header/div[3]/div/div[2]/div/div'
-    button_menu = browser.find_element_by_xpath(menu_xpath)
-    button_menu.click()
-
-    time.sleep(2)
-    
-    # click in 'Exit group'
-    exit_xpath = '//*[@id="app"]/div[1]/span[4]/div/ul/div/div/ul/li[5]/div[1]'
-    button_exit = browser.find_element_by_xpath(exit_xpath)
-    button_exit.click()
-    
-    time.sleep(2)
-
-    # confirm 'EXIT GROUP'
-    confirmed_xpath = '//*[@id="app"]/div[1]/span[2]/div[1]/div/div/div/div/div/div[2]/div[2]/div'
-    button_confirm = browser.find_element_by_xpath(confirmed_xpath)
-    button_confirm.click()
-
-    time.sleep(2)
-
-    # close the window
-    browser.close()
-
-'''
+   
